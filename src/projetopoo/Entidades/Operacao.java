@@ -3,6 +3,8 @@ package projetopoo.Entidades;
 import java.util.Date;
 
 public class Operacao {
+    
+    
     public String tipoOperacao;
     public Carro carro;
     public Date dataHora;
@@ -21,6 +23,4 @@ public class Operacao {
         this.km = km;
         this.Tanque = Tanque;
     }
-    
-    
 }

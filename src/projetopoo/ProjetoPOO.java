@@ -1,6 +1,9 @@
 package projetopoo;
 
 import java.util.Scanner;
+import projetopoo.Gerenciamento.GerenciarCarros;
+import projetopoo.Gerenciamento.GerenciarOperacoes;
+import projetopoo.Gerenciamento.Sistema;
 
 public class ProjetoPOO {
 
@@ -12,6 +15,10 @@ public class ProjetoPOO {
 
     static void menu() {
 
+        Sistema sistema = new Sistema();
+        GerenciarCarros gerCarro = new GerenciarCarros(sistema);
+        GerenciarOperacoes gerOperacoes = new GerenciarOperacoes(sistema);
+        
         Scanner scanner = new Scanner(System.in);
         String opcao;
         do {
@@ -30,14 +37,19 @@ public class ProjetoPOO {
                     System.out.println("Controlar caixa!");
                     break;
                 case "2":
+                    gerCarro.adicionarCarro();
                     break;
                 case "3":
+                    gerCarro.venderCarro();
                     break;
                 case "4":
+                    gerOperacoes.retirarCarro();
                     break;
                 case "5":
+                    gerOperacoes.devolverCarro();
                     break;
                 case "6":
+                    
                     break;
                 case "7":
                     break;
@@ -47,11 +59,7 @@ public class ProjetoPOO {
                 default:
                     System.out.println("Opção Invalida.");
                     break;
-
             }
-
         } while (!opcao.equals("0"));
-
     }
-
 }

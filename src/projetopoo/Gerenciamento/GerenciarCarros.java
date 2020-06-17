@@ -5,17 +5,27 @@ import java.util.List;
 import projetopoo.Entidades.Carro;
 
 public class GerenciarCarros {
+
+    private Sistema _sistema;
+    public GerenciarCarros(Sistema sistema) {
+        _sistema = sistema;
+    }
     
-    public Carro adicionarCarro(List<Carro> listCarro){
+    
+    public Sistema adicionarCarro(){
     
         Carro carro = new Carro();
     
-        return carro;
+        return _sistema;
     }
     
-    public void venderCarro(){
+    public Sistema venderCarro(){
     
+        return _sistema;
+    } 
+    
+    public Sistema buscarCarro(){
+    return _sistema;
     }
-    
-    
+
 }
