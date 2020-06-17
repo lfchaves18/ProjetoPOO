@@ -22,7 +22,7 @@ public class ProjetoPOO {
         Scanner scanner = new Scanner(System.in);
         String opcao;
         do {
-            System.out.println("    *Bem-vindo*\nDigite a opção desejada: ");
+            System.out.println("    \n\nQual operação deseja realizar: ");
             System.out.println("1- Controlar o caixa.\n"
                     + "2- Registrar carro novo.\n"
                     + "3- Vender carro.\n"
@@ -49,9 +49,10 @@ public class ProjetoPOO {
                     gerOperacoes.devolverCarro();
                     break;
                 case "6":
-                    
+                    gerOperacoes.registroOperacoes();
                     break;
                 case "7":
+                    gerCarro.buscarCarro();
                     break;
                 case "0":
                     System.out.println("*Você escolheu sair!*");

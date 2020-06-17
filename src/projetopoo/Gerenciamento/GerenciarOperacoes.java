@@ -24,6 +24,4 @@ public class GerenciarOperacoes {
     
         return _sistema;
     }
-    
-
 }

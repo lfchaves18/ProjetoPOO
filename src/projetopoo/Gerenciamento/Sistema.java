@@ -8,7 +8,7 @@ import projetopoo.Entidades.Operacao;
 public class Sistema {
    public List<Carro> listCarro = new ArrayList<Carro>();
    public List<Operacao> listOperacao = new ArrayList<Operacao>();
-   public List<Operacao> listCarroDisponivel = new ArrayList<Operacao>();
-   public List<Operacao> listCarroAlugado = new ArrayList<Operacao>();
+   public List<Carro> listCarroDisponivel = new ArrayList<Carro>();
+   public List<Carro> listCarroAlugado = new ArrayList<Carro>();
   
 }
