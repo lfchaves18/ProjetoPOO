@@ -24,5 +24,10 @@ public class Carro {
         this.tanque = tanque;
         this.disponibilidade = disponibilidade;
     }
+
+    @Override
+    public String toString() {
+        return "Carro{" + "marca=" + marca + ", modelo=" + modelo + ", ano=" + ano + ", placa=" + placa + ", tipoCarro=" + tipoCarro + ", km=" + km + ", tanque=" + tanque + ", disponibilidade=" + disponibilidade + '}';
+    }
     
 }

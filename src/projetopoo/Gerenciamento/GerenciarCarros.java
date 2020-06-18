@@ -2,6 +2,7 @@ package projetopoo.Gerenciamento;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.stream.Stream;
 import projetopoo.Entidades.Carro;
 
 public class GerenciarCarros {
@@ -105,17 +106,17 @@ public class GerenciarCarros {
 
         if (mostrarTudo == false) {
             for (Carro x : listcarro) {
-                System.out.println("\nID: " + listcarro.indexOf(x) + "\nCarro: " + x.marca +" " + x.modelo + "\nPlaca: " + x.placa);
+                System.out.println("\nID: " + listcarro.indexOf(x) + "\nCarro: " + x.marca + " " + x.modelo + "\nPlaca: " + x.placa);
+            }
+        } else {
+            for (Carro x : listcarro) {
+                System.out.println("\nID: " + listcarro.indexOf(x) + "\nCarro: " + x.marca + " " + x.modelo
+                        + "\nAno: " + x.ano + "\nPlaca: " + x.placa + "\nTipo de carro: " + x.tipoCarro + "\nKilometragem" + x.km
+                        + "\nTanque: " + x.tanque);
+                System.out.println(x.disponibilidade == true ? "Disponivel para locação" : "Indisponivel para locação");
             }
         }
-        else {
-         for (Carro x : listcarro) {
-                System.out.println("\nID: " + listcarro.indexOf(x) + "\nCarro: " + x.marca +" " + x.modelo +
-                        "\nAno: "+x.ano+ "\nPlaca: " + x.placa + "\nTipo de carro: "+x.tipoCarro + "\nKilometragem" + x.km
-                +"\nTanque: "+x.tanque);
-                System.out.println(x.disponibilidade==true ? "Disponivel para locação" : "Indisponivel para locação");
-            }
-        }
+    
     }
 
     public Sistema venderCarro() {
