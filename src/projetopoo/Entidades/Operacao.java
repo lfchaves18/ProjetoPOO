@@ -10,12 +10,12 @@ public class Operacao {
     public Date dataHora;
     public double valor;
     public double km;
-    public double Tanque;
+    public String Tanque;
 
     public Operacao() {
     }
 
-    public Operacao(String tipoOperacao, Carro carro, Date dataHora, double valor, double km, double Tanque) {
+    public Operacao(String tipoOperacao, Carro carro, Date dataHora, double valor, double km, String Tanque) {
         this.tipoOperacao = tipoOperacao;
         this.carro = carro;
         this.dataHora = dataHora;

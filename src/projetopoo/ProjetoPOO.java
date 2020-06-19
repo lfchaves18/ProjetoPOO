@@ -18,7 +18,7 @@ public class ProjetoPOO {
         Sistema sistema = new Sistema();
         GerenciarCarros gerCarro = new GerenciarCarros(sistema);
         GerenciarOperacoes gerOperacoes = new GerenciarOperacoes(sistema);
-        
+
         Scanner scanner = new Scanner(System.in);
         String opcao;
         do {
@@ -34,13 +34,13 @@ public class ProjetoPOO {
             opcao = scanner.next();
             switch (opcao) {
                 case "1":
-                    System.out.println("Controlar caixa!");
+                    gerOperacoes.controlarCaixa();
                     break;
                 case "2":
-                    gerCarro.adicionarCarro();
+                    gerOperacoes.adicionarCarro();
                     break;
                 case "3":
-                    gerCarro.venderCarro();
+                    gerOperacoes.venderCarro();
                     break;
                 case "4":
                     gerOperacoes.retirarCarro();
@@ -52,7 +52,7 @@ public class ProjetoPOO {
                     gerOperacoes.registroOperacoes();
                     break;
                 case "7":
-                    gerCarro.buscarCarro();
+                    gerOperacoes.buscarCarro();
                     break;
                 case "0":
                     System.out.println("*Você escolheu sair!*");
